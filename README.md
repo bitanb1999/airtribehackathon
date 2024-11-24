@@ -13,4 +13,5 @@ with immediate access to expert knowledge, anytime.
 #### Streamlit for Youtube video upload for database creation: https://airtribehackathon99.streamlit.app/
 #### Streamlit for Chatbot : https://airtribechatbot-bot.streamlit.app/
 #### Presentation : https://airtribehackathonpurple.my.canva.site/
+#### Future scope Video summariser : https://github.com/saimadib/video_summary
 
