@@ -4,7 +4,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 import openai
 
 # Set up OpenAI API Key
-openai.api_key = st.secrets.openai_key
+openai.api_key = st.secrets["openai_key"]
 
 # Database setup
 conn = sqlite3.connect("youtube_links.db")
