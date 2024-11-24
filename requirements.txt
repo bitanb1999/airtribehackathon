@@ -1,4 +1,4 @@
 streamlit
 db-sqlite3
 youtube-transcript-api
-openai
+openai==0.28
