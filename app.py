@@ -12,7 +12,7 @@ cursor = conn.cursor()
 
 # Update schema to include summary if not already present
 cursor.execute("""
-    CREATE TABLE IF NOT EXISTS links (
+    CREATE TABLE IF NOT EXISTS youtube_links (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         youtube_link TEXT NOT NULL UNIQUE,
         summary TEXT
@@ -61,7 +61,7 @@ if st.button("Submit"):
 
                 # Store link and summary in the database
                 cursor.execute(
-                    "INSERT OR IGNORE INTO links (youtube_link, summary) VALUES (?, ?)",
+                    "INSERT OR IGNORE INTO youtube_links (youtube_link, summary) VALUES (?, ?)",
                     (link, summary)
                 )
                 conn.commit()
@@ -76,7 +76,7 @@ if st.button("Submit"):
 
 # Display stored links and summaries
 st.subheader("Stored Links and Summaries")
-cursor.execute("SELECT youtube_link, summary FROM links")
+cursor.execute("SELECT youtube_link, summary FROM youtube_links")
 rows = cursor.fetchall()
 
 for row in rows:
