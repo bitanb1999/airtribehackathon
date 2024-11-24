@@ -2,3 +2,6 @@ streamlit
 db-sqlite3
 youtube-transcript-api
 openai==0.28
+llama-index
+nltk
+cdifflib
