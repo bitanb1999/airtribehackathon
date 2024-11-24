@@ -33,7 +33,7 @@ def extract_video_id(link):
 def summarize_text(text):
     try:
         response = openai.Completion.create(
-            engine="text-davinci-003",
+            engine="gpt-3.5-turbo-instruct",
             prompt=f"Summarize this text:\n\n{text}",
             max_tokens=150
         )
