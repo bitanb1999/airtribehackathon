@@ -1,8 +1,5 @@
 streamlit
 openai==0.28
-llama-index==0.8.54
-nltk
-cdifflib
 db-sqlite3
 youtube-transcript-api
 
